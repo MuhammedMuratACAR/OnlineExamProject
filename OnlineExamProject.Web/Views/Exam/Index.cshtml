@@ -1,0 +1,145 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    int index = 0;
+    int index2 = 0;
+
+}
+
+<input type="text" name="ExamCode" value="@ViewBag.ExamCode" />
+
+<div class="btn-group">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+        Right-aligned menu
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+
+
+        @{
+            List<string> lists8 = ViewBag.result as List<string>;
+            if (lists8 != null && lists8.Count > 0)
+            {
+
+
+                @foreach (var item in lists8)
+                {
+                    index++;
+                    <button id="menuButton" class="dropdown-item" type="button" data-toggle="collapse" data-text="text-@index" data-series="@index" data-target="#text-@index" aria-controls="text-@index" aria-expanded="false">
+                        @item
+                    </button>
+
+
+
+
+                }
+
+            }
+        }
+    </div>
+</div>
+
+
+<div class="accordion" id="accordionExample">
+    <div class="card">
+
+
+        @{ List<string> lists2 = ViewBag.result5 as List<string>;
+            List<string> degerler = new List<string>
+                    ();
+
+
+            if (lists2 != null && lists2.Count > 0)
+            {
+
+                foreach (var item in lists2)
+                {
+                    index2++;
+
+                    <br />
+                    <a href='@item.Split('~')[1]'>@item.Split('~')[0]</a>
+
+                    var @url = @item.Split('~')[1];
+
+                    //degerler = BlogTitle.SendList(@url, "/ html / body / div[1] / div / main / article / div[2] / div[1] / div[1] / div / div / div / div[1] / div ");
+
+                    degerler = BlogTitle.SendList(@url, "//div[contains(@data-testid,'BodyWrapper')] | //article[contains(@data-js,'content')]");
+                    // degerlerrr = BlogTitle.SendList(@url, "//div[contains(@class,'body__inner-container')]");
+                    ///degerler5 = BlogTitle.SendList(@url, "//div[contains(@class,'BaseWrap-sc')]");
+                    ///
+
+                    <div id="text-@index2" class="collapse" data-parent="#accordionExample">
+                        <textarea id="text-@index2" data-indes="@index2">
+
+           @foreach (var item5 in degerler)
+            {
+
+                                @item5
+
+
+                            }
+                   </textarea>
+                    </div>
+
+
+                }
+            }
+
+        }
+
+    </div>
+</div>
+
+@*<div class="accordion" id="accordionExample">
+        <div class="card">
+
+
+            <div id="text-1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    sıra 1
+                </div>
+            </div>
+        </div>
+        <div class="card">
+
+            <div id="text-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    sıra2
+                </div>
+            </div>
+        </div>
+        <div class="card">
+
+            <div id="text-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    sıra 3
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+@section Scripts{
+
+
+    <script type="text/javascript">
+
+        $('document').ready(function () {
+
+            $('.dropdown-item').click(function () {
+                var d = $(this).data('series') - 1;
+                var r = $(this).data('text');
+                var id = "textarea#" + r;
+                var thought = $(id).val();
+                alert(thought);
+
+                // $("#spanText").attr('style', 'background-color:gray');
+
+                // document.getElementById(d).attr('style', 'display:block');
+
+            });
+
+
+
+        });
+    </script>
+
+}

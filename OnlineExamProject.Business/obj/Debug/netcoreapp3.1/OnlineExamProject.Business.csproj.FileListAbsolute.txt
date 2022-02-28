@@ -1,0 +1,32 @@
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.Business.deps.json
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.Business.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.csprojAssemblyReference.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.AssemblyInfoInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.AssemblyInfo.cs
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.Business.pdb
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.DTO.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.DTO.pdb
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.pdb
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.csproj.CoreCompileInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.csproj.CopyComplete
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.pdb
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.Business.deps.json
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.Business.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.Business.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.DTO.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.DTO.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.csprojAssemblyReference.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.AssemblyInfoInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.AssemblyInfo.cs
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.csproj.CoreCompileInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.csproj.CopyComplete
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Business\obj\Debug\netcoreapp3.1\OnlineExamProject.Business.pdb

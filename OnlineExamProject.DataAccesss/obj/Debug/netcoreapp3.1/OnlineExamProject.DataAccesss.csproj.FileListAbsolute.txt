@@ -1,0 +1,30 @@
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.deps.json
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.csprojAssemblyReference.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.AssemblyInfoInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.AssemblyInfo.cs
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.runtimeconfig.json
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.runtimeconfig.dev.json
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.genruntimeconfig.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.pdb
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.pdb
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.csproj.CoreCompileInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.csproj.CopyComplete
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.deps.json
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.runtimeconfig.json
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.runtimeconfig.dev.json
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.csprojAssemblyReference.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.AssemblyInfoInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.AssemblyInfo.cs
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.csproj.CopyComplete
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.genruntimeconfig.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DataAccesss\obj\Debug\netcoreapp3.1\OnlineExamProject.DataAccesss.csproj.CoreCompileInputs.cache

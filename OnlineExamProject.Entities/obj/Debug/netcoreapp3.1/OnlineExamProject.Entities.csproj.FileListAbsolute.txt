@@ -1,0 +1,18 @@
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Entities\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.deps.json
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Entities\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.csprojAssemblyReference.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.AssemblyInfoInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.AssemblyInfo.cs
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Entities\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.pdb
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.csproj.CoreCompileInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Entities\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.deps.json
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Entities\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Entities\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.csprojAssemblyReference.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.AssemblyInfoInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.AssemblyInfo.cs
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.csproj.CoreCompileInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.Entities\obj\Debug\netcoreapp3.1\OnlineExamProject.Entities.pdb

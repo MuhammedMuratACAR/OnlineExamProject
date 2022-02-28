@@ -1,0 +1,451 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Member/Views/Shared/_MemberLayout.cshtml";
+    int index = 0;
+    int index2 = 0;
+}
+<input type="text" name="name" value="@ViewBag.LoginUserId" />
+
+<form asp-action="GirisYap" method="post" class="mt-4 w-75 mx-auto p-3 shadow">
+    <div class="bs-docs-section">
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+
+                <div class="page-header">
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+                            ------- Lütfen Oluşturmak İstediğiniz Sınav Başlığını Seçiniz -------
+                        </button>
+                        <div class="dropdown-menu  dropdown-menu-xxl-start text-center text-alig ">
+
+
+                            @{
+            List<string> lists8 = ViewBag.result as List<string>;
+            if (lists8 != null && lists8.Count > 0)
+            {
+
+
+            foreach (var item in lists8)
+                {
+                    index++;
+                                <button id="menuButton" class="dropdown-item" type="button" data-toggle="collapse" data-text="text-@index" data-series="@index" data-target="#text-@index" aria-controls="text-@index" aria-expanded="false">
+                                    @item
+                                </button>
+
+
+
+
+                }
+
+            }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <div class="accordion w-100 h-100" id="accordionExample">
+
+
+
+                    @{List<string> lists2 = ViewBag.result5 as List<string>;
+            List<string> degerler = new List<string>
+                    ();
+
+
+            if (lists2 != null && lists2.Count > 0)
+            {
+
+                foreach (var item in lists2)
+                {
+                    index2++;
+
+                        <br />
+                        //<a href='@item.Split('~')[1]'>@item.Split('~')[0]</a>
+
+                    var @url = @item.Split('~')[1];
+
+                    //degerler = BlogTitle.SendList(@url, "/ html / body / div[1] / div / main / article / div[2] / div[1] / div[1] / div / div / div / div[1] / div ");
+
+                    degerler = BlogTitle.SendList(@url, "//div[contains(@data-testid,'BodyWrapper')] | //article[contains(@data-js,'content')]");
+                    // degerlerrr = BlogTitle.SendList(@url, "//div[contains(@class,'body__inner-container')]");
+                    ///degerler5 = BlogTitle.SendList(@url, "//div[contains(@class,'BaseWrap-sc')]");
+                    ///
+
+                        <div id="text-@index2" class="accordion-collapse collapse" data-parent="#accordionExample">
+                            <input type="text" name="@item.Split('~')[0]" value="@item.Split('~')[0]" class="form-control" />
+
+                            <textarea rows="10" id="text-@index2" data-indes="@index2" class="form-control">
+
+                           @foreach (var item5 in degerler)
+                            {
+
+                                @item5
+
+
+                            }
+                   </textarea>
+                        </div>
+
+
+                }
+            }
+
+                    }
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Soru 1 :</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Soru Yazınız">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">A )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">B )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">C )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">D )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4">
+                <div class="input-group mb-2">
+
+                    <select class="form-select" id="exampleSelect1">
+                        <option>Doğru Cevabı Seç</option>
+                        <option value="A">A )</option>
+                        <option value="B">B )</option>
+                        <option value="C">C )</option>
+                        <option value="D">D )</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Soru 2 :</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Soru Yazınız">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">A )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">B )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">C )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">D )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4">
+                <div class="input-group mb-2">
+
+                    <select class="form-select" id="exampleSelect1">
+                        <option>Doğru Cevabı Seç</option>
+                        <option value="A">A )</option>
+                        <option value="B">B )</option>
+                        <option value="C">C )</option>
+                        <option value="D">D )</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Soru 3 :</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Soru Yazınız">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">A )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">B )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">C )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">D )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4">
+                <div class="input-group mb-2">
+
+                    <select class="form-select" id="exampleSelect1">
+                        <option>Doğru Cevabı Seç</option>
+                        <option value="A">A )</option>
+                        <option value="B">B )</option>
+                        <option value="C">C )</option>
+                        <option value="D">D )</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Soru 4 :</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Soru Yazınız">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">A )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">B )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">C )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">D )</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seçenek Yaznınız">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4">
+                <div class="input-group mb-2">
+
+                    <select class="form-select" id="exampleSelect1">
+                        <option>Doğru Cevabı Seç</option>
+                        <option value="A">A )</option>
+                        <option value="B">B )</option>
+                        <option value="C">C )</option>
+                        <option value="D">D )</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <br />
+        <div class="row justify-content-center">
+
+            <div class="col-lg-5">
+                <div class="bs-component">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-lg btn-success" type="button">SINAV OLUŞTUR</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br />
+
+
+    </div>
+
+</form>
+<input type="text" name="ExamCode" value="@ViewBag.ExamCode" />
+
+
+
+
+@*<div class="accordion" id="accordionExample">
+        <div class="card">
+
+
+            <div id="text-1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    sıra 1
+                </div>
+            </div>
+        </div>
+        <div class="card">
+
+            <div id="text-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    sıra2
+                </div>
+            </div>
+        </div>
+        <div class="card">
+
+            <div id="text-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    sıra 3
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+@section Scripts{
+
+
+    <script type="text/javascript">
+
+        $('document').ready(function () {
+
+            $('.dropdown-item').click(function () {
+                var d = $(this).data('series') - 1;
+                var r = $(this).data('text');
+                var id = "textarea#" + r;
+                var thought = $(id).val();
+                alert(thought);
+
+                // $("#spanText").attr('style', 'background-color:gray');
+
+                // document.getElementById(d).attr('style', 'display:block');
+
+            });
+
+            $('.dropdown-item').change(function () {
+                $(".dropdown-item").attr('aria-expanded', 'false');
+
+                // $("#spanText").attr('style', 'background-color:gray');
+
+                // document.getElementById(d).attr('style', 'display:block');
+
+            });
+
+
+        });
+    </script>
+
+}

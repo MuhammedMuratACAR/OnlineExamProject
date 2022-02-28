@@ -1,0 +1,18 @@
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\bin\Debug\netcoreapp3.1\OnlineExamProject.DTO.deps.json
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\bin\Debug\netcoreapp3.1\OnlineExamProject.DTO.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\bin\Debug\netcoreapp3.1\OnlineExamProject.DTO.pdb
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.csprojAssemblyReference.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.AssemblyInfoInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.AssemblyInfo.cs
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.csproj.CoreCompileInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\bin\Debug\netcoreapp3.1\OnlineExamProject.DTO.deps.json
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\bin\Debug\netcoreapp3.1\OnlineExamProject.DTO.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\bin\Debug\netcoreapp3.1\OnlineExamProject.DTO.pdb
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.csprojAssemblyReference.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.AssemblyInfoInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.AssemblyInfo.cs
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.csproj.CoreCompileInputs.cache
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.dll
+C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.pdb
