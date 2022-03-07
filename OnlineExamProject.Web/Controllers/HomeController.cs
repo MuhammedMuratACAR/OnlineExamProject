@@ -107,9 +107,6 @@ namespace OnlineExamProject.Web.Controllers
             return View(model);
         }
 
-
-
-
         public IActionResult StatusCode(int? code)
         {
 
@@ -121,7 +118,11 @@ namespace OnlineExamProject.Web.Controllers
             return View();
         }
 
-
+        public async Task<IActionResult> LogOut()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index");
+        }
 
 
     }

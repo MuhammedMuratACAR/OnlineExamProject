@@ -16,3 +16,6 @@ C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\
 C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.csproj.CoreCompileInputs.cache
 C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.dll
 C:\Users\acarm\source\repos\OnlineExamProject - Kopya (2)\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.pdb
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.dll
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\bin\Debug\netcoreapp3.1\OnlineExamProject.Entities.pdb
+C:\Users\acarm\source\repos\OnlineExamProject\OnlineExamProject.DTO\obj\Debug\netcoreapp3.1\OnlineExamProject.DTO.csproj.CopyComplete

@@ -7,5 +7,6 @@ namespace OnlineExamProject.DataAccesss.Interfaces
 {
     public interface IQuestionDal : IGenericDal<Question>
     {
+        List<Question> GetAllQuestionByExamId(int examId);
     }
 }

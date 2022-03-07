@@ -1,0 +1,33 @@
+﻿
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #aaa;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #09bffb;
+    padding: 4px;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #aaa;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: transparent;
+    margin-left: 3px;
+}
+table.dataTable th.dt-center,
+table.dataTable td.dt-center,
+table.dataTable td.dataTables_empty {
+    background-color: firebrick;
+    text-align: center;
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+    color: white;
+}

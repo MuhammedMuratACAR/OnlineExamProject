@@ -1,0 +1,626 @@
+﻿
+@{
+    ViewData["Title"] = "SaveExam";
+    Layout = "~/Areas/Member/Views/Shared/_MemberLayout.cshtml";
+    int index = 0;
+    int index2 = 0;
+    int index5 = 0;
+
+}  <div class="row">
+    <input type="hidden" id="appUserId" value="@ViewBag.LoginUserId" />
+    <input type="hidden" id="examCode" value="@ViewBag.ExamCode" />
+</div>
+<form class="mt-4 w-75 mx-auto p-3 shadow">
+    <div class="bs-docs-section">
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+
+                <div class="page-header">
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+                            ------- Lütfen Oluşturmak İstediğiniz Sınav Başlığını Seçiniz -------
+                        </button>
+                        <div class="dropdown-menu  dropdown-menu-xxl-start text-center text-alig ">
+
+                            @{
+                                List<string> lists = ViewBag.result as List<string>;
+                                if (lists != null && lists.Count > 0)
+                                {
+
+                                    foreach (var item in lists)
+                                    {
+
+                                        index++;
+                                        <button id="menuButton" class="dropdown-item" type="button" data-toggle="collapse" data-text="text-@index" data-series="@index" data-target="#text-@index" aria-controls="text-@index" aria-expanded="false">
+                                            @item
+                                        </button>
+                                    }
+
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <div class="accordion w-100 h-100" id="accordionExample">
+
+                    @{List<string> lists2 = ViewBag.result2 as List<string>;
+                        List<string> degerler = new List<string>();
+
+
+                        if (lists2 != null && lists2.Count > 0)
+                        {
+
+                            foreach (var item in lists2)
+                            {
+                                index2++;
+
+                                var @url = @item.Split('~')[1];
+
+                                degerler = BlogTitle.SendList(@url, "//div[contains(@data-testid,'BodyWrapper')] | //article[contains(@data-js,'content')]");
+
+
+                                <div id="text-@index2" class="accordion-collapse collapse" data-parent="#accordionExample">
+                                    <br />
+                                    <input type="text" id="text-@index2" value="@item.Split('~')[0]" class="form-control" />
+                                    <br />
+                                    <textarea rows="10" id="text-@index2" data-indes="@index2" class="form-control">
+
+                           @foreach (var item5 in degerler)
+                            {
+                                @item5
+                            }
+                                     </textarea>
+                                    <br />
+                                </div>
+
+
+                            }
+                        }
+
+                    }
+                </div>
+
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Soru 1 :</div>
+                    </div>
+                    <input type="text" class="form-control" id="questionText1" placeholder="Soru Yazınız">
+                </div>
+            </div>
+        </div>
+        <div class="questionSelect1">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">A )</div>
+                        </div>
+                        <input type="text" class="form-control" id="firstOption1" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">B )</div>
+                        </div>
+                        <input type="text" class="form-control" id="secondOption1" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">C )</div>
+                        </div>
+                        <input type="text" class="form-control" id="thirtOption1" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">D )</div>
+                        </div>
+                        <input type="text" class="form-control" id="fourthOption1" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4">
+                <div class="input-group mb-2">
+
+                    <select class="form-select" id="currentAnswerSelect1">
+                        <option>Doğru Cevabı Seç</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Soru 2 :</div>
+                    </div>
+                    <input type="text" class="form-control" id="questionText2" placeholder="Soru Yazınız">
+                </div>
+            </div>
+        </div>
+        <div class="questionSelect2">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">A )</div>
+                        </div>
+                        <input type="text" class="form-control" id="firstOption2" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">B )</div>
+                        </div>
+                        <input type="text" class="form-control" id="secondOption2" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">C )</div>
+                        </div>
+                        <input type="text" class="form-control" id="thirtOption2" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">D )</div>
+                        </div>
+                        <input type="text" class="form-control" id="fourthOption2" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4">
+                <div class="input-group mb-2">
+                    <select class="form-select" id="currentAnswerSelect2">
+                        <option>Doğru Cevabı Seç</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Soru 3 :</div>
+                    </div>
+                    <input type="text" class="form-control" id="questionText3" placeholder="Soru Yazınız">
+                </div>
+            </div>
+        </div>
+        <div class="questionSelect3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">A )</div>
+                        </div>
+                        <input type="text" class="form-control" id="firstOption3" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">B )</div>
+                        </div>
+                        <input type="text" class="form-control" id="secondOption3" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">C )</div>
+                        </div>
+                        <input type="text" class="form-control" id="thirtOption3" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">D )</div>
+                        </div>
+                        <input type="text" class="form-control" id="fourthOption3" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4">
+                <div class="input-group mb-2">
+                    <select class="form-select" id="currentAnswerSelect3">
+                        <option>Doğru Cevabı Seç</option>
+                    </select>
+
+                </div>
+            </div>
+
+        </div>
+
+        <br />
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Soru 4 :</div>
+                    </div>
+                    <input type="text" class="form-control" id="questionText4" placeholder="Soru Yazınız">
+                </div>
+            </div>
+        </div>
+        <div class="questionSelect4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">A )</div>
+                        </div>
+                        <input type="text" class="form-control" id="firstOption4" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">B )</div>
+                        </div>
+                        <input type="text" class="form-control" id="secondOption4" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">C )</div>
+                        </div>
+                        <input type="text" class="form-control" id="thirtOption4" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">D )</div>
+                        </div>
+                        <input type="text" class="form-control" id="fourthOption4" placeholder="Seçenek Yaznınız">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4">
+                <div class="input-group mb-2">
+                    <select class="form-select" id="currentAnswerSelect4">
+                        <option>Doğru Cevabı Seç</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+
+        <br />
+        <div class="row justify-content-center">
+
+            <div class="col-lg-3">
+                <div class="input-group mb-2">
+                    <div class="accordion" id="accordionExample5">
+
+                        @{for (int i = 0; i <= 5; i++)
+                            {
+                                index5++;
+
+                                <div id="text-@index5" class="accordion-collapse collapse" data-parent="#accordionExample5">
+
+                                    <button class="btn btn-lg btn-success sinavOlustur" id="text-@index5" data-text="text-@index5" type="button">
+                                        SINAV OLUŞTUR
+                                    </button>
+                                </div>
+                            }
+                        }
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+@section Scripts{
+   
+
+    <script type="text/javascript">
+
+        $('document').ready(function () {
+
+            $(".questionSelect1 input").change(function () {
+                var currentAnswerOption11 = $("#firstOption1").val();
+                var currentAnswerOption12 = $("#secondOption1").val();
+                var currentAnswerOption13 = $("#thirtOption1").val();
+                var currentAnswerOption14 = $("#fourthOption1").val();
+
+                var newOptions1 = {
+                    "Doğru Cevabı Seç": "",
+                    "A": currentAnswerOption11,
+                    "B": currentAnswerOption12,
+                    "C": currentAnswerOption13,
+                    "D": currentAnswerOption14
+                };
+
+                var $el = $("#currentAnswerSelect1");
+
+                $el.empty();// remove old options
+                $.each(newOptions1, function (key, value) {
+                    $el.append($("<option></option>")
+                        .attr("value", value).text(key));
+                });
+
+            });
+
+
+            $(".questionSelect2 input").change(function () {
+                var currentAnswerOption21 = $("#firstOption2").val();
+                var currentAnswerOption22 = $("#secondOption2").val();
+                var currentAnswerOption23 = $("#thirtOption2").val();
+                var currentAnswerOption24 = $("#fourthOption2").val();
+
+                var newOptions2 = {
+                    "Doğru Cevabı Seç": "",
+                    "A": currentAnswerOption21,
+                    "B": currentAnswerOption22,
+                    "C": currentAnswerOption23,
+                    "D": currentAnswerOption24
+                };
+
+                var $el2 = $("#currentAnswerSelect2");
+                $el2.empty(); // remove old options
+                $.each(newOptions2, function (key, value) {
+                    $el2.append($("<option></option>")
+                        .attr("value", value).text(key));
+
+                });
+
+            });
+
+
+            $(".questionSelect3 input").change(function () {
+                var currentAnswerOption31 = $("#firstOption3").val();
+                var currentAnswerOption32 = $("#secondOption3").val();
+                var currentAnswerOption33 = $("#thirtOption3").val();
+                var currentAnswerOption34 = $("#fourthOption3").val();
+
+
+                var newOptions3 = {
+                    "Doğru Cevabı Seç": "",
+                    "A": currentAnswerOption31,
+                    "B": currentAnswerOption32,
+                    "C": currentAnswerOption33,
+                    "D": currentAnswerOption34
+                };
+
+                var $el3 = $("#currentAnswerSelect3");
+                $el3.empty(); // remove old options
+                $.each(newOptions3, function (key, value) {
+                    $el3.append($("<option></option>")
+                        .attr("value", value).text(key));
+
+                });
+
+            });
+
+
+            $(".questionSelect4 input").change(function () {
+                var currentAnswerOption41 = $("#firstOption4").val();
+                var currentAnswerOption42 = $("#secondOption4").val();
+                var currentAnswerOption43 = $("#thirtOption4").val();
+                var currentAnswerOption44 = $("#fourthOption4").val();
+
+                var newOptions4 = {
+                    "Doğru Cevabı Seç": "",
+                    "A": currentAnswerOption41,
+                    "B": currentAnswerOption42,
+                    "C": currentAnswerOption43,
+                    "D": currentAnswerOption44
+                };
+
+                var $el4 = $("#currentAnswerSelect4");
+                $el4.empty(); // remove old options
+                $.each(newOptions4, function (key, value) {
+                    $el4.append($("<option></option>")
+                        .attr("value", value).text(key));
+
+                });
+
+            });
+
+            $('.dropdown-item').click(function () {
+                var d = $(this).data('series') - 1;
+                var r = $(this).data('text');
+                var id = "textarea#" + r;
+                var thought = $(id).val();
+
+
+                var buttonId = "button#" + r;
+                $(buttonId).click(function () {
+                    var r = $(this).data('text');
+                    var examText = "input#" + r;
+                    var examDescription = "textarea#" + r;
+                    var examCode = $("#examCode").val();
+                    var examTitle = $(examText).val();
+                    var examDescription = $(examDescription).val();
+                    var appUserId = $("#appUserId").val();
+
+
+                    var questionText1 = $("#questionText1").val();
+                    var firstOption1 = $("#firstOption1").val();
+                    var secondOption1 = $("#secondOption1").val();
+                    var thirtOption1 = $("#thirtOption1").val();
+                    var fourthOption1 = $("#fourthOption1").val();
+                    var currentAnswerSelect1 = $("#currentAnswerSelect1").val();
+
+                    var questionText2 = $("#questionText2").val();
+                    var firstOption2 = $("#firstOption2").val();
+                    var secondOption2 = $("#secondOption2").val();
+                    var thirtOption2 = $("#thirtOption2").val();
+                    var fourthOption2 = $("#fourthOption2").val();
+                    var currentAnswerSelect2 = $("#currentAnswerSelect2").val();
+
+
+                    var questionText3 = $("#questionText3").val();
+                    var firstOption3 = $("#firstOption3").val();
+                    var secondOption3 = $("#secondOption3").val();
+                    var thirtOption3 = $("#thirtOption3").val();
+                    var fourthOption3 = $("#fourthOption3").val();
+                    var currentAnswerSelect3 = $("#currentAnswerSelect3").val();
+
+
+                    var questionText4 = $("#questionText4").val();
+                    var firstOption4 = $("#firstOption4").val();
+                    var secondOption4 = $("#secondOption4").val();
+                    var thirtOption4 = $("#thirtOption4").val();
+                    var fourthOption4 = $("#fourthOption4").val();
+                    var currentAnswerSelect4 = $("#currentAnswerSelect4").val();
+
+
+                    if (examCode != "" && examTitle != "" && examDescription != "" && appUserId != "" && questionText1 != "" && firstOption1 != "" && secondOption1 != "" && thirtOption1 != "" && fourthOption1 != "" && currentAnswerSelect1 != "" && questionText2 != "" && firstOption2 != "" && secondOption2 != "" && thirtOption2 != "" && fourthOption2 != "" && currentAnswerSelect2 != "" && questionText3 != "" && firstOption3 != "" && secondOption3 != "" && thirtOption3 != "" && fourthOption3 != "" && currentAnswerSelect3 != "" && questionText4 != "" && firstOption4 != "" && secondOption4 != "" && thirtOption4 != "" && fourthOption4 != "" && currentAnswerSelect4 != "") {
+
+                        let exam = {
+                            ExamCode: examCode,
+                            ExamTitle: examTitle,
+                            ExamDescription: examDescription,
+                            AppUserId: appUserId
+                        };
+
+                        $.ajax({
+                            type: "POST",
+                            url: "/Member/Home/SaveExam/",
+                            data: exam,
+                            success: function (gelenCevap) {
+                                let gelenObje = jQuery.parseJSON(gelenCevap);
+
+                                alert(gelenObje.ExamTitle + " Başlıklı Sınav Başarı ile Eklendi");
+
+                                $.ajax({
+                                    contentType: "application/json; charset=Utf-8;",
+                                    dataType: "json",
+                                    type: "GET",
+                                    url: "/Member/Home/GetExamId",
+                                    data: { ExamCode: examCode },
+                                    success: function (code) {
+                                        let retrunExamId = jQuery.parseJSON(code);
+                                        //alert(retrunExamId);
+                                        var indisArr = 0;
+
+                                        for (var i = 1; i <= 4; i++) {
+                                            indisArr++;
+                                            var arrayName = "question" + indisArr;
+                                            var questionText = "input#questionText" + indisArr;
+                                            var firstOption = "input#firstOption" + indisArr;
+                                            var secondOption = "input#secondOption" + indisArr;
+                                            var thirtOption = "input#thirtOption" + indisArr;
+                                            var fourthOption = "input#fourthOption" + indisArr;
+                                            var currentAnswer = "select#currentAnswerSelect" + indisArr;
+
+                                            var questionTextName = $(questionText).val();
+                                            var firstOptionName = $(firstOption).val();
+                                            var secondOptionName = $(secondOption).val();
+                                            var thirtOptionName = $(thirtOption).val();
+                                            var fourthOptionName = $(fourthOption).val();
+                                            var currentAnswerName = $(currentAnswer).val();
+
+
+                                            $.ajax({
+                                                type: "POST",
+                                                url: "/Member/Question/SaveQuestion/",
+                                                data: {
+                                                    QuestionText: questionTextName,
+                                                    FirstOption: firstOptionName,
+                                                    SecondOption: secondOptionName,
+                                                    ThirtOption: thirtOptionName,
+                                                    FourthOption: fourthOptionName,
+                                                    CurrentAnswer: currentAnswerName,
+                                                    ExamId: retrunExamId,
+                                                },
+                                                success: function (returnQuestions) {
+                                                    let returnQuestion = jQuery.parseJSON(returnQuestions);
+
+
+                                                    //alert("soru eklendi");
+                                                    window.location.href = "/Member/Home/Index";
+
+                                                },
+                                                error: function (error) {
+                                                    alert("Boş  Alanları Doldurunuz");
+                                                }
+                                            });
+                                        }
+
+                                    }
+                                });
+
+
+                            },
+                            error: function (error) {
+                                alert(error.responseText);
+                            },
+                        });
+
+                    }
+                    else {
+                        alert("Boş Alanları Doldurunuz");
+                    }
+                });
+
+            });
+
+
+            $('.dropdown-item').change(function () {
+                $(".dropdown-item").attr('aria-expanded', 'false');
+            });
+
+        });
+    </script>
+
+}

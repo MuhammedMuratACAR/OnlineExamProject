@@ -2296,6 +2296,9 @@
         }
       },
       "OnlineExamProject.DTO/1.0.0": {
+        "dependencies": {
+          "OnlineExamProject.Entities": "1.0.0"
+        },
         "runtime": {
           "OnlineExamProject.DTO.dll": {}
         },

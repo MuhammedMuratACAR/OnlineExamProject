@@ -2694,6 +2694,9 @@
       "OnlineExamProject.DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "OnlineExamProject.Entities": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/OnlineExamProject.DTO.dll": {}
         },

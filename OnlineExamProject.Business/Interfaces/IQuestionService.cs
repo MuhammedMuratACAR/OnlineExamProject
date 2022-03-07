@@ -7,5 +7,6 @@ namespace OnlineExamProject.Business.Interfaces
 {
     public interface IQuestionService:IGenericService<Question>
     {
+        List<Question> GetAllQuestionByExamId(int examId);
     }
 }

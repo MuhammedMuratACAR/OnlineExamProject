@@ -1,0 +1,168 @@
+﻿@model List<QuestionListDto>
+@{
+    ViewData["Title"] = "ExamStart";
+    Layout = "~/Areas/Member/Views/Shared/_MemberLayout.cshtml";
+    int index = 0;
+}
+
+
+<form class="mt-4 w-100 mx-auto p-3 shadow">
+    <div class="row">
+
+        <h2 class="text-center fw-bold">@ViewBag.ExamTitle </h2>
+
+    </div>
+    <div class="row">
+
+        <p>@ViewBag.ExamDescription</p>
+
+    </div>
+    <div class="bs-docs-section">
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                index++;
+
+                <div class="col-lg-6 div-@index">
+                    <div><p>@index ) @item.QuestionText</p></div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">A )</div>
+                        </div>
+                        <input type="text" class="form-control" id="firstOption-@index" value="@item.FirstOption">
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">B )</div>
+                        </div>
+                        <input type="text" class="form-control" id="secondOption-@index" value="@item.SecondOption">
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">C )</div>
+                        </div>
+                        <input type="text" class="form-control" id="thirtOption-@index" value="@item.ThirtOption">
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">D )</div>
+                        </div>
+                        <input type="text" class="form-control" id="fourthOption-@index" value="@item.FourthOption">
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="hidden" class="form-control" id="currentAnswer-@index" value="@item.CurrentAnswer">
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="hidden" class="form-control" id="selectCurrentAnswer-@index">
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-3">
+                <div class="input-group mb-2">
+                    <button class="btn btn-lg btn-success sinaviTamamla" type="button">
+                        SINAVI TAMAMLA
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+@section Scripts{
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $(".div-1 input").click(function () {
+                $(".div-1 input").css("background-color", "");
+                $(this).css("background-color", "grey");
+                var selectThisAnswer = $(this).attr("id");
+                var selectThisAnswerId = "#" + selectThisAnswer;
+                var selectAnswer = $(this).val();
+                $("#selectCurrentAnswer-1").val(selectAnswer);
+
+                $(".sinaviTamamla").click(function () {
+                    if ($("#selectCurrentAnswer-1").val() == $("#currentAnswer-1").val()) {
+                        $(".div-1 input").css("background-color", "");
+                        $(selectThisAnswerId).css("background-color", "green");
+                    }
+                    else {
+                        $(".div-1 input").css("background-color", "");
+                        $(selectThisAnswerId).css("background-color", "red");
+                    }
+                });
+            });
+
+            $(".div-2 input").click(function () {
+                $(".div-2 input").css("background-color", "");
+                $(this).css("background-color", "grey");
+                var selectThisAnswer = $(this).attr("id");
+                var selectThisAnswerId = "#" + selectThisAnswer;
+                var selectAnswer = $(this).val();
+                $("#selectCurrentAnswer-2").val(selectAnswer);
+
+                $(".sinaviTamamla").click(function () {
+                    if ($("#selectCurrentAnswer-2").val() == $("#currentAnswer-2").val()) {
+                        $(".div-2 input").css("background-color", "");
+                        $(selectThisAnswerId).css("background-color", "green");
+                    }
+                    else {
+                        $(".div-2 input").css("background-color", "");
+                        $(selectThisAnswerId).css("background-color", "red");
+                    }
+                });
+            });
+
+            $(".div-3 input").click(function () {
+                $(".div-3 input").css("background-color", "");
+                $(this).css("background-color", "grey");
+                var selectThisAnswer = $(this).attr("id");
+                var selectThisAnswerId = "#" + selectThisAnswer;
+                var selectAnswer = $(this).val();
+                 $("#selectCurrentAnswer-3").val(selectAnswer);
+                
+                $(".sinaviTamamla").click(function () {
+                    if ($("#selectCurrentAnswer-3").val() == $("#currentAnswer-3").val()) {
+                        $(".div-3 input").css("background-color", "");
+                        $(selectThisAnswerId).css("background-color", "green");
+                    }
+                    else {
+                        $(".div-3 input").css("background-color", "");
+                        $(selectThisAnswerId).css("background-color", "red");
+                    }
+                });
+               
+                
+            });
+
+            $(".div-4 input").click(function () {
+                $(".div-4 input").css("background-color", "");
+                $(this).css("background-color", "grey");
+                var selectThisAnswer = $(this).attr("id");
+                var selectThisAnswerId = "#" + selectThisAnswer;
+                var selectAnswer = $(this).val();
+                $("#selectCurrentAnswer-4").val(selectAnswer);
+
+                $(".sinaviTamamla").click(function () {
+                    if ($("#selectCurrentAnswer-4").val() == $("#currentAnswer-4").val()) {
+                        $(".div-4 input").css("background-color", "");
+                        $(selectThisAnswerId).css("background-color", "green");
+                    }
+                    else {
+                        $(".div-4 input").css("background-color", "");
+                        $(selectThisAnswerId).css("background-color", "red");
+                    }
+                });
+            });
+
+          
+        });
+    </script>
+}
+

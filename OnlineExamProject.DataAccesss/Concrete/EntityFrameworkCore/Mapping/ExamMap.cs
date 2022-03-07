@@ -15,7 +15,8 @@ namespace OnlineExamProject.DataAccesss.Concrete.EntityFrameworkCore.Mapping
             builder.Property(I => I.ExamId).ValueGeneratedOnAdd();
             builder.Property(I => I.ExamTitle).HasMaxLength(150).IsRequired();
             builder.Property(I => I.ExamDescription).HasColumnType("ntext").IsRequired();
-            builder.HasMany(I => I.Questions).WithOne(I => I.Exam).HasForeignKey(I => I.ExamCode).OnDelete(DeleteBehavior.Cascade);
+            builder.Property(I => I.PostTime).HasDefaultValue(DateTime.Now);
+            builder.HasMany(I => I.Questions).WithOne(I => I.Exam).HasForeignKey(I => I.ExamId).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

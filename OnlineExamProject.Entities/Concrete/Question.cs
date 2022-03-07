@@ -15,7 +15,7 @@ namespace OnlineExamProject.Entities.Concrete
         public string FourthOption { get; set; }
         public string CurrentAnswer { get; set; }
 
-        public int ExamCode { get; set; }
+        public int ExamId { get; set; }
         public Exam Exam { get; set; }
 
     }

@@ -13,7 +13,7 @@ namespace OnlineExamProject.DataAccesss.Concrete.EntityFrameworkCore.Mapping
         {
             builder.Property(I => I.Name).HasMaxLength(100).IsRequired();
             builder.Property(I => I.Surname).HasMaxLength(100).IsRequired();
-            builder.HasMany(I => I.Exams).WithOne(I => I.AppUser).HasForeignKey(I => I.AppUserId).OnDelete(DeleteBehavior.Cascade);
+            builder.HasMany(I => I.Exams).WithOne(I => I.AppUser).HasForeignKey(I => I.AppUserId);
 
         }
     }

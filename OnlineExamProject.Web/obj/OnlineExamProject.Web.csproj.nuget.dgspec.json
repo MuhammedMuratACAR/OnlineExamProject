@@ -188,7 +188,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\acarm\\source\\repos\\OnlineExamProject\\OnlineExamProject.Entities\\OnlineExamProject.Entities.csproj": {
+                "projectPath": "C:\\Users\\acarm\\source\\repos\\OnlineExamProject\\OnlineExamProject.Entities\\OnlineExamProject.Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

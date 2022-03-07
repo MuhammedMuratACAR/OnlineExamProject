@@ -239,7 +239,9 @@ namespace OnlineExamProject.DataAccesss.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("PostTime")
-                        .HasColumnType("TEXT");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT")
+                        .HasDefaultValue(new DateTime(2022, 3, 3, 1, 6, 59, 813, DateTimeKind.Local).AddTicks(8158));
 
                     b.HasKey("ExamId");
 
@@ -259,7 +261,7 @@ namespace OnlineExamProject.DataAccesss.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("ExamCode")
+                    b.Property<int>("ExamId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("FirstOption")
@@ -288,7 +290,7 @@ namespace OnlineExamProject.DataAccesss.Migrations
 
                     b.HasKey("QuestionId");
 
-                    b.HasIndex("ExamCode");
+                    b.HasIndex("ExamId");
 
                     b.ToTable("Questions");
                 });
@@ -359,7 +361,7 @@ namespace OnlineExamProject.DataAccesss.Migrations
                 {
                     b.HasOne("OnlineExamProject.Entities.Concrete.Exam", "Exam")
                         .WithMany("Questions")
-                        .HasForeignKey("ExamCode")
+                        .HasForeignKey("ExamId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

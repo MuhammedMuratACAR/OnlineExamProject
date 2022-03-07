@@ -7,5 +7,7 @@ namespace OnlineExamProject.DataAccesss.Interfaces
 {
     public interface IExamDal : IGenericDal<Exam>
     {
+        List<Exam> GetAllByUserId(int userId);
+       
     }
 }
