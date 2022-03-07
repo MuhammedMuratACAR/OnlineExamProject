@@ -12,11 +12,13 @@
         <h2 class="text-center fw-bold">@ViewBag.ExamTitle </h2>
 
     </div>
+    <br />
     <div class="row">
 
         <p>@ViewBag.ExamDescription</p>
 
     </div>
+    <br />
     <div class="bs-docs-section">
 
         <div class="row">
@@ -125,8 +127,8 @@
                 var selectThisAnswer = $(this).attr("id");
                 var selectThisAnswerId = "#" + selectThisAnswer;
                 var selectAnswer = $(this).val();
-                 $("#selectCurrentAnswer-3").val(selectAnswer);
-                
+                $("#selectCurrentAnswer-3").val(selectAnswer);
+
                 $(".sinaviTamamla").click(function () {
                     if ($("#selectCurrentAnswer-3").val() == $("#currentAnswer-3").val()) {
                         $(".div-3 input").css("background-color", "");
@@ -137,8 +139,8 @@
                         $(selectThisAnswerId).css("background-color", "red");
                     }
                 });
-               
-                
+
+
             });
 
             $(".div-4 input").click(function () {
@@ -161,7 +163,7 @@
                 });
             });
 
-          
+
         });
     </script>
 }
